@@ -4,6 +4,7 @@ void main() {
   runApp(const MaterialApp(
     home: Contatos(),
   ));
+  debugShowCheckedModeBanner: false;
 }
 
 class Contatos extends StatelessWidget {
@@ -12,12 +13,29 @@ class Contatos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
-        title: const Text('Contatos'),
+      backgroundColor: const Color(0xFFD8BDAD), 
+        title: const Text(
+          'CONTATOS',
+          style: TextStyle(
+            color: Color(0xFF7A3B15), 
+            fontSize: 20,
+            fontFamily: 'Jua',
+            fontWeight: FontWeight.w400,
+            height: 0
+          ),
+        ),
+        centerTitle: true,
+        
+        
+      
+        
+        
       ),
       body: const Center(
-        child: Text('Conteúdo da tela Contatos'),
       ),
     );
   }
+
 }
