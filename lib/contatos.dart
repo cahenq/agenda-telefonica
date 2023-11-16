@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: Contatos(),
   ));
 }
 
 class Contatos extends StatelessWidget {
+  const Contatos({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Contatos'),
+        title: const Text('Contatos'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Conteúdo da tela Contatos'),
       ),
     );

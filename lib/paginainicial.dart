@@ -15,19 +15,19 @@ class InicialPage extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: Color(0xFFE7E5E5),
+        color: const Color(0xFFE7E5E5),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
               width: 200,
               height: 200,
-              child: Image.asset('assets/imagens/image 1.png'),
+              child: Image.asset('assets/imagens/image.png'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: const Color(0xFFB86B3D),
+                backgroundColor: const Color(0xFFB86B3D),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
@@ -35,13 +35,13 @@ class InicialPage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => NovoContato()),
+                  MaterialPageRoute(builder: (context) => const NovoContato()),
                 );
               },
-              child: Text(
+              child: const Text(
                 'Novo Contato',
                 style: TextStyle(
-                  color: const Color(0xFFE7E5E5),
+                  color: Color(0xFFE7E5E5),
                   fontSize: 20,
                   fontFamily: 'Jua',
                   fontWeight: FontWeight.w400,
@@ -49,10 +49,10 @@ class InicialPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: const Color(0xFFB86B3D),
+                backgroundColor: const Color(0xFFB86B3D),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
@@ -60,13 +60,13 @@ class InicialPage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Contatos()),
+                  MaterialPageRoute(builder: (context) => const Contatos()),
                 );
               },
-              child: Text(
+              child: const Text(
                 'Contatos',
                 style: TextStyle(
-                  color: const Color(0xFFE7E5E5),
+                  color: Color(0xFFE7E5E5),
                   fontSize: 20,
                   fontFamily: 'Jua',
                   fontWeight: FontWeight.w400,
