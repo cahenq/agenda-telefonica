@@ -35,7 +35,7 @@ class InicialPage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const NovoContato()),
+                  MaterialPageRoute(builder: (context) => NovoContato()),
                 );
               },
               child: const Text(
